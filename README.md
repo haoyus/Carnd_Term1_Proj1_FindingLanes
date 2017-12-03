@@ -27,6 +27,7 @@ My pipeline consisted of 5 steps. First, I converted the images to grayscale, th
 
 In order to draw a single line on the left and right lanes, I modified the draw_lines() function by make the following changes:
 
+```python
 def draw_lines(img, lines, color=[255, 0, 0], thickness=15):
     """
     NOTE: this is the function you might want to use as a starting point once you want to 
@@ -51,6 +52,7 @@ def draw_lines(img, lines, color=[255, 0, 0], thickness=15):
         # disabled the following code to draw extrapolated averaged line
         # for x1,y1,x2,y2 in line:
             # cv2.line(img, (x1, y1), (x2, y2), color, thickness)
+```
 
 If you'd like to include images to show how the pipeline works, here is how to include an image: 
 
